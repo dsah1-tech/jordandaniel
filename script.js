@@ -204,3 +204,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 });
+document.querySelector(".copy-email").addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const email = this.dataset.email;
+
+    navigator.clipboard.writeText(email).then(() => {
+        const originalText = this.textContent;
+
+        this.textContent = "Copied!";
+
+        setTimeout(() => {
+            this.textContent = originalText;
+        }, 1500);
+    });
+});
