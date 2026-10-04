@@ -1139,3 +1139,26 @@ footer {
         transition: transform 0.3s ease;
     }
 }
+.contact-email {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 18px 28px;
+  border: 1px solid #333;
+
+  color: #171717;
+  text-decoration: none;
+
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 600;
+
+  transition: 0.25s ease;
+}
+
+.contact-email:hover {
+  background: #171717;
+  color: #fff;
+  border-color: #171717;
+}
